@@ -1,0 +1,31 @@
+.frm_tag
+{
+    position: relative;
+    top: 200px;
+    left: 30%;
+}
+.login_input
+{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #dcdcdc;
+}
+.login_btn_div
+{
+    width: 300px;
+    margin-left: 2px;
+}
+.login_btn
+{
+    width: 75px;
+    background-color: inherit;
+    border-color: #dcdcdc;
+    font-size: 13px;
+    transform: translate(0px, 15px);
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+}
+.login_btn:hover { font-weight: bold; border: 1px solid #dcdcdc;}
+.login_btn:active { border-color: #787878; }

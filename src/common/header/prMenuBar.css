@@ -1,0 +1,51 @@
+:root {
+    --color1: #9EF048;
+    --color2: #787878;
+    --color3: #63CC63;
+}
+
+#leftMenuContainer
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.menu_icon
+{
+    position: relative;
+    left: 15px;
+    font-size: 40px;
+    color: #787878;
+    cursor: pointer;
+}
+.showMenu
+{
+    position: absolute;
+    width: 100px;
+    height: 590px;
+    left: 15px;
+    top: 80px;
+    display: none;
+}
+.uniMenu
+{
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+.showingMenu {
+     display: inherit; 
+     -webkit-animation:slide-in-fwd-center 1s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-fwd-center 1s cubic-bezier(.25,.46,.45,.94) both;
+}
+@-webkit-keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+.menu_bottom
+{
+    position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.menu_bottom_signup
+{
+    left: 40px;
+}
+a {text-decoration: none; color: black;}

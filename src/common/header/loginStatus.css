@@ -1,0 +1,17 @@
+.loginStatus
+{
+    position: absolute;
+    top: 15px;
+    font-size: 15px;
+    color: #787878;
+    cursor: pointer;
+}
+.logOut
+{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 15px;
+    color: #787878;
+    cursor: pointer;
+}

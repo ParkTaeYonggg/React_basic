@@ -1,0 +1,42 @@
+.header_logo
+{
+    width: 70px; 
+    height: 70px;
+}
+.logoATag
+{
+    top: 10px;
+    position: absolute;
+    left: 140px;
+}
+.searchBar 
+{
+    position: absolute;
+    left: 360px;
+    top: 10px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #787878;
+    text-align: right;
+    color: #787878;
+    line-height: 35px;
+}
+.loginStatus
+{
+    position: absolute;
+    right: 100px;
+}
+@media screen and (max-width: 870px) {
+    .searchBar 
+    {   
+        width: 100px;
+        left: 300px;
+        font-size: 13px;
+        border: none;
+        border-bottom: 2px solid #787878;
+        text-align: right;
+        color: #787878;
+    }
+}
+    
