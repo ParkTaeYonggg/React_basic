@@ -1,0 +1,16 @@
+.errorMessageForInput
+{
+    color: red;
+    font-size: 13px;
+    
+}
+.errorMessageForInput2
+{
+    color: orange;
+    font-size: 13px;
+}
+.successMessageForInput
+{
+    color: blue;
+    font-size: 13px;
+}

@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import "./loginModal.css";
+import InputTag from "./loginCommon/InputTag";
 
 class GoLogin extends React.Component {
     constructor (props) {
@@ -68,22 +69,8 @@ class GoLogin extends React.Component {
         return (
             <Fragment>
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" 
-                           name="id" 
-                           value={this.state.id} 
-                           onChange={this.handleIdChk} 
-                           placeholder="아이디"
-                           className="login_input"
-                           ref={this.TargetingId} /><br />
-
-                    <input type="password" 
-                           name="pw" 
-                           value={this.state.pw} 
-                           onChange={this.handlePwChk} 
-                           placeholder="비밀번호"
-                           className="login_input"
-                           ref={this.TargetingPw} /><br />
-
+                    <InputTag type="id" value={this.state.id} onChange={this.handleIdChk} Ref={this.TargetingId} />
+                    <InputTag type="pw" value={this.state.pw} onChange={this.handlePwChk} Ref={this.TargetingPw} />
                     <button onClick={this.LoginConfirm}>로그인</button>
                 </form>
             </Fragment>
