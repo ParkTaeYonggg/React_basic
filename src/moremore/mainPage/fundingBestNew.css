@@ -1,0 +1,37 @@
+#fundingMainCon
+{
+    position: relative;
+    left: 200px;
+    display:inline-block;
+    color: #787878;
+}
+#fundingMainCon p span img
+{
+    width: 300px; 
+    height: 250px;
+}
+#fundingMainCon p
+{
+    display: grid;
+    grid-template-rows: 95% 5%;
+    float: left;
+    margin-left: 60px;
+}
+#fundingMainCon p span
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1300px) {
+    #fundingMainCon p:last-child
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 990px) {
+    #fundingMainCon p:nth-child(2)
+    {
+        display: none;
+    }
+}

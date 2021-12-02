@@ -20,6 +20,22 @@
     z-index: 0.1;
 
 }
+.btnBox
+{
+    position: absolute;
+    z-index: 1;
+    left: 50%; top: 340px;
+}
+.btnBox span {
+    background-color: #787878;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 50%;
+    font-size: 1px;
+    color: #787878;
+    margin-left: 3px;
+    cursor: pointer;
+}
 @media screen and (min-width: 1000px) and (max-width: 1390px) {
     .inner_img_div
     {
@@ -37,26 +53,6 @@
         overflow: hidden;
     }
     .img_tag {width: 410px;}
-    .next_btn {left: 630px;}
+    .btnBox {left: 380px;}
 }
 
-.prev_btn
-{
-    position: absolute;
-    left: 150px;
-    top: 250px;
-    background-color: inherit;
-    border: inherit;
-    border-bottom: 2px solid #dcdcdc;
-    cursor: pointer;
-}
-.next_btn
-{
-    position: absolute;
-    top: 250px;
-    right: 50px;
-    background-color: inherit;
-    border: inherit;
-    border-bottom: 2px solid #dcdcdc;
-    cursor: pointer;
-}

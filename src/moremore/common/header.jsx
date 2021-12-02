@@ -3,13 +3,15 @@ import PrMenuBar from "./header/prMenuBar";
 import SearchBar from "./header/searchBar";
 import LoginStatus from "./header/loginStatus";
 
-function CommonComponent (props) {
+function CommonComponent () {
     return (
-        <header>
-            <PrMenuBar />
-            <SearchBar />
-            <LoginStatus />
-        </header>
+        <>
+            <header>
+                <PrMenuBar />
+                <SearchBar />
+                <LoginStatus />
+            </header>
+        </>
     );
 }
 export default CommonComponent;

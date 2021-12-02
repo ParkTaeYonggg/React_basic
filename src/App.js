@@ -1,15 +1,24 @@
 import './App.css';
 import {Route} from "react-router-dom";
-import Header from "./common/header";
-import AdBanner from "./common/adBanner";
-import SubmitChk from "./login/submitChk";
+import Header from "./moremore/common/header";
+import SubmitChk from "./moremore/login/submitChk";
+import "./moremore/common/layout.css";
+import FooterSection from './moremore/common/footer/footer';
+import AllMainPage from './moremore/mainPage/allMainPage';
+
 
 function App() {
   return (
     <>
       <Route path="/" component={Header} />
-      <Route exact path="/" component={AdBanner} />
-      <Route exact path="/lo/" component={SubmitChk} />
+      <div id="mainBody">
+        <Route exact path="/" component={AllMainPage} />
+        <Route exact path="/lo/" component={SubmitChk} />
+      </div>
+      <Route path="/" component={FooterSection} />
+
+
+      
     </>
     
   );
