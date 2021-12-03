@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "./loginModal.css";
 import InputTag from "./loginCommon/InputTag";
+import KakaoLogin from "./kakaoLogin/kakaoLogin";
 
 class GoLogin extends React.Component {
     constructor (props) {
@@ -57,8 +58,7 @@ class GoLogin extends React.Component {
     ////////////////////////
         // 세션등록을 위한 함수
         loginSuccess = () => {
-            window.sessionStorage.setItem("id", document.querySelector("input[name=id]").value);
-            window.sessionStorage.setItem("pw", document.querySelector("input[name=pw]").value);
+            window.sessionStorage.setItem("id", this.inputRefId.value);
             document.location.href="/";
         }
         inputRefId;
@@ -72,6 +72,7 @@ class GoLogin extends React.Component {
                     <InputTag type="id" value={this.state.id} onChange={this.handleIdChk} Ref={this.TargetingId} />
                     <InputTag type="pw" value={this.state.pw} onChange={this.handlePwChk} Ref={this.TargetingPw} />
                     <button onClick={this.LoginConfirm}>로그인</button>
+                    <KakaoLogin />
                 </form>
             </Fragment>
         );

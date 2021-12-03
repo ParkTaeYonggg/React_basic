@@ -16,8 +16,6 @@ function App() {
         <Route exact path="/lo/" component={SubmitChk} />
       </div>
       <Route path="/" component={FooterSection} />
-
-
       
     </>
     

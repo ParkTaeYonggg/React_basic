@@ -5,33 +5,28 @@ import {Link} from "react-router-dom";
 class LoginStatus extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {name:""};
-        
+        this.state = {name:window.sessionStorage.getItem("id")};
         this.logOut = this.logOut.bind(this);
-    }
-    componentDidMount() {
-        if (sessionStorage.getItem("id")) {
-            this.setState({
-                name: sessionStorage.getItem("id"),
-            });
-        }
     }
     // 로그아웃 함수
     logOut () {
         alert("로그아웃 되었습니당.");
-        sessionStorage.removeItem("id");
-        sessionStorage.removeItem("pw");
+        window.sessionStorage.removeItem("id");
         this.setState({
             name: ""
         });
         document.location.href="/";
     }
+    componentDidUpdate(prevProps) {
+        if (prevProps !== this.props && this.props.boo) {
+            this.setState({name:window.sessionStorage.getItem("id")});
+        }
+    }
     // 로그인 시 노출될 화면
-    LoginChk = () => {
-        if (this.state.name.trim() == "") {
+    LoginChk = (e) => {
+        if (!e.boo) {
             return (
                 <Link to="/lo/" className="loginStatus">로그인</Link>
-                
             );
         } else {
             return (
@@ -44,7 +39,7 @@ class LoginStatus extends React.Component {
     }
     render() {
         return (
-            <this.LoginChk />
+            <this.LoginChk boo={this.props.boo} />
         );
     }
 }

@@ -14,8 +14,7 @@ header
 footer
 {
     position: relative;
-    width: 100%;
-    display: flex;
+    display: inline-flex;
     left: 30%;
     text-align: center;
     font-size: 13px;
