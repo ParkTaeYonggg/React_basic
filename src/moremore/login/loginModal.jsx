@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import "./loginModal.css";
 import InputTag from "./loginCommon/InputTag";
 import KakaoLogin from "./kakaoLogin/kakaoLogin";
+import UseAxios from "../common/useAxios";
 
 class GoLogin extends React.Component {
     constructor (props) {
@@ -10,12 +11,11 @@ class GoLogin extends React.Component {
             id: "",
             pw: "",
             loginSrc: "",
-            tempId: "user",
-            tempPw: "user",
         };
         this.handlePwChk = this.handlePwChk.bind(this);
         
     }
+
     // 인풋태그 작성에 필요한 함수들
     handleIdChk = (e) => {
         this.setState({
@@ -35,7 +35,10 @@ class GoLogin extends React.Component {
      // 로그인 체크
      LoginConfirm = (e) => {
         // 로그인 화면이 출력되어 있을 때
-        if (this.inputRefId.value === this.state.tempId && this.inputRefPw.value === this.state.tempPw) {
+        let fetchedData = new UseAxios(`http://localhost:8080/idPwChk/chk/controller?id=${this.state.id}&pw=${this.state.pw}`);
+        console.log(fetchedData);
+
+        if (this.state.id === "user" && this.state.pw === "user") {
             alert("반갑슴다.");
             this.loginSuccess();
             const frmData = new FormData(e.target.parentNode);
@@ -58,7 +61,7 @@ class GoLogin extends React.Component {
     ////////////////////////
         // 세션등록을 위한 함수
         loginSuccess = () => {
-            window.sessionStorage.setItem("id", this.inputRefId.value);
+            window.sessionStorage.setItem("id", "박감자");
             document.location.href="/";
         }
         inputRefId;

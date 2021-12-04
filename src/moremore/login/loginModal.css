@@ -3,6 +3,7 @@
     position: relative;
     top: 200px;
     left: 30%;
+    display: inline-block;
 }
 .login_input
 {

@@ -2,15 +2,17 @@
 {
     color: red;
     font-size: 13px;
-    
+    width: inherit;
 }
 .errorMessageForInput2
 {
     color: orange;
     font-size: 13px;
+    width: inherit;
 }
 .successMessageForInput
 {
     color: blue;
     font-size: 13px;
+    width: inherit;
 }
