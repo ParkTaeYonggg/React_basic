@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "./loginModal.css";
 import InputTag from "./loginCommon/InputTag";
 import KakaoLogin from "./kakaoLogin/kakaoLogin";
-import UseAxios from "../common/useAxios";
+// import UseAxios from "../common/useAxios";
 
 class GoLogin extends React.Component {
     constructor (props) {
@@ -13,9 +13,9 @@ class GoLogin extends React.Component {
             loginSrc: "",
         };
         this.handlePwChk = this.handlePwChk.bind(this);
+        this.Callback = this.Callback.bind(this);
         
     }
-
     // 인풋태그 작성에 필요한 함수들
     handleIdChk = (e) => {
         this.setState({
@@ -32,12 +32,17 @@ class GoLogin extends React.Component {
      handleSubmit = (e) => {
         e.preventDefault();
     }
+
+    // 콜백함수
+    Callback (e) {
+       this.setState({loginSrc: e});
+    }
+
      // 로그인 체크
      LoginConfirm = (e) => {
-        // 로그인 화면이 출력되어 있을 때
-        let fetchedData = new UseAxios(`http://localhost:8080/idPwChk/chk/controller?id=${this.state.id}&pw=${this.state.pw}`);
-        console.log(fetchedData);
-
+        // 로그인 화면이 출력되어 있을 때 // 여기서 로그인 성공하면 세션에 등록하는건 컨트롤러에서 해야겠음.
+        // UseAxios(`/api/login/id?id=${this.state.id}&pw=${this.state.pw}`,this.Callback);
+        
         if (this.state.id === "user" && this.state.pw === "user") {
             alert("반갑슴다.");
             this.loginSuccess();
