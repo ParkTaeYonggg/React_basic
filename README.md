@@ -7,3 +7,4 @@
 * [틱택토](/src/Ex01)
 * [기초](/src/Ex02)
 * [적용1](src/moremore)
+* [적용2](/src/menu)
