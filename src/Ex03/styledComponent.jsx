@@ -31,5 +31,4 @@ function ContentContainer () {
     return <Container />;
 }
 
-
 export default ContentContainer;

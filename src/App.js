@@ -7,6 +7,7 @@ import FooterSection from './moremore/common/footer/footer';
 import AllMainPage from './moremore/mainPage/allMainPage';
 import TestStyledComponent from './Ex03/printStyle';
 
+import MainPage from "./menu/main";
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
         <Route exact path="/lo/" component={SubmitChk} />
       </div>
       <Route path="/" component={FooterSection} /> */}
-      <TestStyledComponent />
+
+
+      {/* <TestStyledComponent /> */}
+
+      <MainPage />
       
     </>
     
