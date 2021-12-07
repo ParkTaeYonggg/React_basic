@@ -79,6 +79,7 @@ width: 100%;
 height: 610px;
 right: 0px;
 top: 60px;
+z-index: 1;
 `;
 
 const LoginModal = styled(gridContenVertical)`
@@ -86,6 +87,7 @@ border: 1px solid #787878;
 border-radius: 5px;
 width: 400px;
 height: 500px;
+background-color: white;
 `;
 
 const CloseBtn = styled.div`

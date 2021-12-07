@@ -26,6 +26,8 @@ export const AdLine = styled.div`
     height: 400px;
     grid-template-rows: 90% 10%;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
 `;
 
 export const VerticalContent = styled.div`

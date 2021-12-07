@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 
-function StyledInputTag ({type, name, value, Ref, ph, error, errorMessage, onChange}) {
+function StyledInputTag ({type, name, value, Ref, ph, onChange}) {
     return (
         <StyledInput type={type} 
                      name={name}
@@ -25,8 +25,5 @@ const StyledInput = styled.input`
     border: none;
     border-bottom: 2px solid #787878;
     width: 100%;
-    &::after {
-        content: after입니다;
-    }
 `;
 

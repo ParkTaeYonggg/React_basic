@@ -11,5 +11,5 @@ export default function UseAxios (url, callback) {
     .then(res => {
         callback(res.data);
     })
-    .catch(error => alert("관리자에게 문의하세요.("+error+")"));
+    .catch(error => alert("관리자에게 문의하세요.(axios : "+error+")"));
 }
