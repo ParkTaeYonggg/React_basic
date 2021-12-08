@@ -52,5 +52,6 @@ const ImgBtn = styled.button`
 const styledImg = {
     width: "1330px",
     maxWidth: "100%",
-    height: "100%"
+    height: "100%",
+    cursor: "pointer"
 }

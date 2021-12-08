@@ -10,6 +10,7 @@ import KakaoCode from "./menu/header/login/Kakao_code";
 
 import MainPage from "./menu/main";
 import AdContainer from './menu/header/adBanner/adContainer';
+import CategoryLine from './menu/body/categoryLine';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
       <Route path="/" component={MainPage} />
       <Route exact path="/" component={AdContainer} />
+      <Route exact path="/" component={CategoryLine} />
       <Route exact path="/login/kakao" component={KakaoCode} />
       
     </>
