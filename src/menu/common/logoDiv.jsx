@@ -15,8 +15,17 @@ const StyledLink = styled(Link)`
     height: 40px;
     border-radius: 40%;
     &:hover{
-        width: 72px;
-        background-size: 72px 40px;
-        padding-top: 3px;
+        animation-name: sizeUp;
+        animation-duration: 0.7s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes sizeUp {
+        to {
+            width: 72px;
+            padding-top: 3px;
+            background-size: 72px 40px;
+        }
     }
 `;

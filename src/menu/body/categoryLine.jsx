@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import styled from "styled-components";
-import { RowContent } from "../common/theme";
+import { RowContent,VerticalContent } from "../common/theme";
 import {SiReact, SiSpring, SiJquery, SiJavascript, SiJava, SiOracle} from "react-icons/si";
 import MainContents from "./mainContents";
 import SelectedMainContent from "./selectedMainContent";
-
 
 export default function CategoryLine () {
     const [btnIdx, setBtnIdx] = useState([]);
@@ -51,7 +50,9 @@ export default function CategoryLine () {
                           onClick={() => handlerColor("oracle",btnIdx.oracle)}></SiOracle>
 
             </CategoryContent>
-            <HandlerData />
+            
+                <HandlerData />
+            
         </>
     );
 }
@@ -67,3 +68,10 @@ const StyledSvg = {
     height: "100%",
     cursor: "pointer",
 }
+
+const FlexContainer =  styled.div`
+    width: 100%;
+    display: flex;
+
+`;
+

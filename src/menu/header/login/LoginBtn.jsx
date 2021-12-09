@@ -38,5 +38,21 @@ const StyledLogin = styled.div`
     height: 80%;
     line-height: 40px;
     cursor: pointer;
+
+    &:hover {
+        animation-name: fillColor;
+        animation-duration: 0.7s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes fillColor {
+        to {
+            background-color: skyblue;
+            color: black;
+            font-weight: bold;
+            opacity: 0.7;
+        }
+    }
 `;
 
