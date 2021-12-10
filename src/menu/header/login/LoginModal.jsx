@@ -4,6 +4,7 @@ import StyledInputTag from "../../common/styledInput";
 import { VerticalContent, gridContenVertical } from "../../common/theme";
 import UseAxios from "../../common/useAxios";
 import KakaoLogin from "./kakaoLogin";
+import NaverLogin from "./naverLogin";
 import SubmitLoginBtn from "./submitLoginBtn";
 
 export default class ExportLoginModal extends React.Component {
@@ -33,6 +34,8 @@ export default class ExportLoginModal extends React.Component {
     callback = (e) => {
         if (e) {
             alert("환영합니다.");
+            this.props.onClick();
+            window.sessionStorage.setItem("nickname", "박감자");
             this.props.callback(e);
         } else {
             alert("회원정보가 일치하지 않습니다.");
@@ -59,7 +62,7 @@ export default class ExportLoginModal extends React.Component {
                                     Ref={this.handlerRefPw}
                                     ph="암호를 입력해주세요."/>
                     <SubmitLoginBtn />
-                    <KakaoLogin />
+                    <div><KakaoLogin /><NaverLogin /></div>
                 </LoginModal>
                 </form>
             </LoginModal_size>

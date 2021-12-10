@@ -7,6 +7,7 @@ import FooterSection from './moremore/common/footer/footer';
 import AllMainPage from './moremore/mainPage/allMainPage';
 import TestStyledComponent from './Ex03/printStyle';
 import KakaoCode from "./menu/header/login/Kakao_code";
+import NaverCode from "./menu/header/login/naver_code";
 
 import MainPage from "./menu/main";
 import AdContainer from './menu/header/adBanner/adContainer';
@@ -29,6 +30,7 @@ function App() {
       <Route exact path="/" component={AdContainer} />
       <Route exact path="/" component={CategoryLine} />
       <Route exact path="/login/kakao" component={KakaoCode} />
+      <Route exact path="/login/naver" component={NaverCode} />
       
     </>
     

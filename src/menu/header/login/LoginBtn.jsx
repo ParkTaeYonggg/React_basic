@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 import ExportLoginModal from "./LoginModal";
+import LogoutAfterLogin from "./logoutAfterLogin";
 
 
 
@@ -17,7 +18,7 @@ function LoginBtn() {
     }
     return (
         <>
-            {loginStatus ? <StyledLogin>박감자</StyledLogin>: <StyledLogin onClick={handleModal}>로그인</StyledLogin>}
+            {loginStatus ? <LogoutAfterLogin callback={callback} />: <StyledLogin onClick={handleModal}>로그인</StyledLogin>}
             {isToggle && !loginStatus ? <ExportLoginModal onClick={handleModal} callback={callback}/> : null}
         </>
     );
@@ -27,7 +28,7 @@ export default LoginBtn;
 
 
 
-const StyledLogin = styled.div`
+export const StyledLogin = styled.div`
     border: 1px solid #787878;
     font-size: 20px;
     background-color: inherit;

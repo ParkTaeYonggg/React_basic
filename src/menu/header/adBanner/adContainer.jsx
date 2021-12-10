@@ -2,7 +2,6 @@ import React, {useState, useEffect, useRef} from "react";
 import styled from "styled-components";
 import { AdLine } from "../../common/theme";
 import UseAxios from "../../common/useAxios";
-import {Link} from "react-router-dom";
 
 function AdContainer () {
     const [imgData, setImgData] = useState([]);
@@ -51,7 +50,6 @@ function AdContainer () {
                 <ImgBtn onClick={() => ShowImg(imgData.ad2)}/>
                 <ImgBtn onClick={() => ShowImg(imgData.ad3)}/>
             </div>
-            <Link to="/test/">테스트</Link>
         </AdLine>
     );
 }
