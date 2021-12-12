@@ -16,7 +16,6 @@ export default function StyledInput ({id, name, type, value, placeholder, Ref, e
                 <ErrorMSGDiv>{errorMessage}!</ErrorMSGDiv>
             </InputContainsError>
             );
-
 }
 
 

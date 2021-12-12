@@ -6,7 +6,6 @@ export default function MyHouseTopBar () {
     const [modal, setModal] = useState(false);
 
     const handlerModal = () => {
-        console.log("켜짐");
         setModal(!modal);
     }
     return (
@@ -21,7 +20,7 @@ export default function MyHouseTopBar () {
     );
 }
 
-const FullSize = styled.div`
+export const FullSize = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;

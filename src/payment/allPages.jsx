@@ -3,11 +3,17 @@ import styled from "styled-components";
 
 import {Device} from "./common/theme";
 import TotalMyHouse from "./myHouse/totalMyHouse";
+import AllOrderInfo from "./orderInfo/allOrderInfo";
+import TestPaymentAPI from "./testPaymentAPI";
 export default function AllPages () {
     return (
         <FullScreen>
             <DeviceSize>
                 <TotalMyHouse />
+                <p></p>
+                <AllOrderInfo />
+                <p></p>
+                <TestPaymentAPI />
             </DeviceSize>
         </FullScreen>
     );
