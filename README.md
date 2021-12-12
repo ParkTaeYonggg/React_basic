@@ -8,3 +8,4 @@
 * [기초](/src/Ex02)
 * [적용1](src/moremore)
 * [연습용메인페이지](/src/menu)
+* [연습용결제페이지](/src/payment)
