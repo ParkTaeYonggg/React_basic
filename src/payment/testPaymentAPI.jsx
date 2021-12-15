@@ -20,7 +20,7 @@ export default function TestPaymentAPI () {
             merchant_uid: "TEST_" + new Date().getTime(),
             // 실제론 데이터를 넣어줄 자리 (지금은 임시)
             name: "공작의 날개",
-            amount: 1,
+            amount: 100,
             buyer_email: "test@test.com",
             buyer_name: "박감자",
             buyer_tel: "010-999-9999",

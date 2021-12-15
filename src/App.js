@@ -1,6 +1,8 @@
 import './App.css';
 import {Route} from "react-router-dom";
 import AllPages from './payment/allPages';
+import LoginTemplate from "./reduxExample/reduxExample3/LoginTemplate";
+
 
 // import Header from "./moremore/common/header";
 // import SubmitChk from "./moremore/login/submitChk";
@@ -38,7 +40,10 @@ function App() {
        */}
 
 
-      <AllPages /> 
+      {/* <AllPages /> */}
+
+      <LoginTemplate />
+      
     </>
     
   );

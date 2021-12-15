@@ -3,7 +3,6 @@ import styled from "styled-components";
 import MyHouseItemsContainer from "./myHouseItemsContainer";
 
 export default function MyHouseItemModal ({ onClick }) {
-
     return (
         <ContainerSize>
             <TopBar><XBtn onClick={onClick}>x</XBtn></TopBar>
