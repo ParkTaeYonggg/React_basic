@@ -9,4 +9,4 @@
 * [컨트롤러와 데이터를 주고 받아보기, common컴포넌트 만들어보기, 이벤트 및 스테이트 다뤄보기, 로그인API이해](/src/menu)
 * [결제API이해, mobile크기로 틀만 만들어보기](/src/payment)
 * [리덕스 이해](/src/reduxExample)
-* [임시데이터Controller](/react_basic_controller)
+* [임시데이터Controller](https://github.com/ParkTaeYonggg/react_basic_controller)
