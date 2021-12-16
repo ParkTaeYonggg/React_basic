@@ -2,6 +2,7 @@ import './App.css';
 import {Route} from "react-router-dom";
 import AllPages from './payment/allPages';
 import LoginTemplate from "./reduxExample/reduxExample3/LoginTemplate";
+import ReduxDataChk from './reduxExample/reduxExample3/reduxDataChk';
 
 
 // import Header from "./moremore/common/header";
@@ -43,6 +44,7 @@ function App() {
       {/* <AllPages /> */}
 
       <LoginTemplate />
+      <Route exact path="/redux/test/data" component={ReduxDataChk}/>
       
     </>
     
